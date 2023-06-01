@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <p>{{ blogs }}</p>
-    <BlogCard/>
+  <div v-for="b in blogs" :key="b.id">
+    <BlogCard :blog="b"/>
   </div>
 </template>
 
